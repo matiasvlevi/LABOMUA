@@ -1,0 +1,398 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+
+\graphicspath{ {./images/} }
+\usepackage{float}
+
+\title{LABORATOIRE SUR LA TRAJECTOIRE D’UN PROJECTILE}
+
+
+
+\date{March 2021}
+
+
+\begin{document}
+
+    \begin{titlepage}\centering
+
+    \textbf{MATIAS VAZQUEZ-LEVI}\\
+    \textbf{ÉLIOTT RISLER-GAREAU}\\
+    \textbf{CHARLES MARCHILDON}\\
+    \vspace*{1mm}
+    (Groupe 5-20)\\
+    (Equipe 17)
+
+    \vspace*{55mm}
+
+    \Large LABORATOIRE SUR LA TRAJECTOIRE D’UN PROJECTILE
+    \vspace*{40mm}
+
+    Travail présenté à \\
+    \textbf{Luc Morin} \\
+    Dans le cadre du cours\\
+    \emph{Physique. 5e Secondaire}
+
+    \vspace*{30mm}
+
+    \small\textbf{COLLÈGE MONT-SAINT-LOUIS}\\
+    29 mars 2021\\
+
+
+    \end{titlepage}
+    \hfill
+
+    \setcounter{section}{1}
+    \section{Délimitation du probleme}
+
+        \subsection*{D1}
+            Le but du laboratoire est de calculer la distance de chute $(\Delta x)$ a l'aide de diverse méthodes pour enfin en choisir une que nous jugons assée précise pour appuyer notre prédiction finale.
+
+
+        \subsection*{D2}
+
+            Nous allons Mesurer la vitesse finale de la balle a la fin du plan incliné avec trois méthodes différentes. Notre première méthode consiste à chronometrer 6 fois la balle en chute sur le plan incliné pour en obtenir une valeur moyenne $(\Delta t)$. Avec la deuxieme méthode, nous allons calculer la vitesse de la balle en divisant le nombre d'images de chute par le nombre d'images par seconde de capture, ce qui élimine le besoin de chronometrer. Pour la troisième methode. nous allons utiliser Tracker. Avec Tracker nous pouvons calculer la vitesse finale $(v_{fx})$ à l'aide du graphique fournit par l'application et du temps chronometré.
+
+        \subsection*{D3}
+
+            Pour calculer la distance $(\Delta x)$ de chute de la bille. nous allons tout dabord calculer le temps de chute a l'aide d'une formule de MUA: $\Delta s = \frac{(v_f + v_i)}{2} \Delta t $. Avec le temps de chute en y, nous allons calculer la distance parcourue horizontalement avec la vitesse finale calculée avec une des trois méthodes a l'aide d'une formule MRU: $v = \frac{\Delta s}{\Delta t}$.
+
+    \vspace{15mm}
+
+    \hfill
+
+    \section{Schéma du montage}
+        \subsection{}
+        \includegraphics[scale=0.75]{smontage.png}
+        \subsection{}
+        \includegraphics[scale=0.75]{smontage2.png}
+
+
+    \hfill
+
+        \section{Tableau d’observations}
+        \begin{table}[H]
+        \begin{tabular}{llll}
+        \textbf{Objets}                                    & \textbf{Mesure}        &  &  \\
+        Hauteur de départ de la bille sur le rail & $11.0 \pm \ 0.05 \ cm$ &              &  \\
+        Hauteur de la table                       & $76.5 \pm \ 0.05 \ cm$ &              &  \\
+        Position de la bille sur le rail          & $60.0 \pm \ 0.05 \ cm$ &              &  \\
+        Taille du gabarit                         & $51.0 \pm \ 0.05 \ cm$ &              &  \\
+        Angle du rail par rapport à la table      & $13.0^{\circ} \pm 0.5^{\circ}$    &              &
+        \end{tabular}
+        \end{table}
+
+        \vspace{20mm}
+
+        \section{Traitement des données. méthode mécanique}
+            \subsection{Temps pris par la bille pour atteindre la fin du rail}
+                \begin{table}[H]\centering
+                \begin{tabular}{llll}
+                Essai & Temps de la bille (secondes) &  &  \\
+                1     & 1.05                         &  &  \\
+                2     & 1.01                         &  &  \\
+                3     & 0.98                         &  &  \\
+                4     & 1.06                         &  &  \\
+                5     & 0.93                         &  &  \\
+                6     & 0.97                         &  &
+                \end{tabular}
+                \end{table}
+            \subsection{Calcul de la moyenne du temp pris par la bille pour atteindre la fin du rail}
+
+                \vspace{5mm}
+                \begin{equation}
+                \Delta t = \frac{1}{n}  \sum_{i=0}^{n} essais_i
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                \Delta t = \frac{1}{6} (1.05+1.01+0.98+1.06+0.93+0.97)
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta t = \frac{1}{6} (6)
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta t = 1.00 s
+                \end{equation}
+                \vspace{5mm}
+            \subsection{Calcul de la vitesse finale}
+                \setcounter{equation}{0}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta s = \frac{(v_f+v_i)}{2}  \Delta t
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_{fx} = 2 \left( \frac{\Delta s}{\Delta t} \right) - v_i
+                \end{equation}
+                 \vspace{5mm}
+                \begin{equation}
+                    \Delta s = 60 \ cm \pm 0.05 \ cm = 0.60 \ m \pm 0.0005 \ m
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_{fx} = 2 \left( \frac{0.6  \pm 0.0005}{1.00 \pm 0.1} \right) - 0
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_{fx} = 2 \left( \frac{0.6 \ \grave{a} \ 0.05 \% }{1.00 \ \grave{a} \ 10\% } \right)
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_{fx} = 1.2 \ m/s \ \ \grave{a} \ \ 10.05 \%
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_{fx} = 120 \ cm/s \ \ \grave{a} \ \ 10.05 \%
+                \end{equation}
+                \vspace{10mm}
+                \newpage
+
+            \subsection{Calculer le temps de chute}
+                \setcounter{equation}{0}
+                \vspace{5mm}
+                \vspace{5mm}
+                \begin{equation}
+                    a = -980 \ cm/s^2
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta y = V_i \Delta t \ + \ \frac{1}{2} a \Delta t ^2
+                \end{equation}
+               \vspace{5mm}
+                \begin{equation}
+                    0 = \ \frac{1}{2}(a) \Delta t_y ^2 + 0 \ \Delta t_y \  - \Delta y
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    0 = \ (-490.5 \ cm/s^2) \Delta t_y ^2 + 0\Delta t_y \  - (76.5cm)
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta t_y = \frac{-(0)-\sqrt{(0)^2 - 4(-490.5)(76.5)}}{2(-490.5)}
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta t_y = 0.395123333884 \ s
+                \end{equation}
+                \vspace{5mm}
+            \subsection{Calculer la distance parcourue par la bille a l'aide du temps de chute}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta x = \Delta t_y \times V_{fx}
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta x = 0.395123333884 \ s \times 120 \ cm/s
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta x = 47.4148000661 \ cm \ \ \grave{a} \ \ 10.05 \%
+                \end{equation}
+        \section{Traitement des données. méthode vidéo}
+            \vspace{4mm}
+            \subsection{Photo de montage}
+                \includegraphics[scale=0.75]{pmontage.png}
+                \vspace{8mm}
+            \subsection{Calcul du temps avec les données de la caméra}
+
+                Calcul de $ \Delta t $ à l’aide du nombre d’image capturées par la caméra  durant la descente de la bille $( \Delta Image)$ et à l’aide de la vitesse de capture de la caméra en image par secondes $(R)$
+                \setcounter{equation}{0}
+                \vspace{5mm}
+                \begin{equation}
+                    R = 120
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta Image = Image_f - Image_i
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta t = \frac{\Delta Image}{R}
+                \end{equation}
+                \vspace{10mm}
+            \subsection{Calcul de la vitesse}
+
+                \setcounter{equation}{0}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta s = \frac{(v_f+v_i)}{2}  \Delta t
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_{fx} = 2 \left( \frac{\Delta s}{\Delta t} \right) - v_i
+                \end{equation}
+                 \vspace{5mm}
+                \begin{equation}
+                    \Delta s = 60 \ cm \pm 0.05 \ cm = 0.60 \ m \pm 0.0005 \ m
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_{fx} = 2 \left( \frac{0.6 \pm 0.0005}{1.00 \pm 0} \right) - 0
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_{fx} = 2 \left( \frac{0.6 \ \grave{a} \ 0.05 \% }{1.00 \ \grave{a} \ 0\% } \right)
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_{fx} = 1.2 \ m/s \ \ \grave{a} \ \ 0.05 \%
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_{fx} = 120 \ cm/s  \ \ \grave{a} \ \ 0.05 \%
+                \end{equation}
+                \vspace{10mm}
+            \subsection{Calculer le temps de chute}
+                \setcounter{equation}{0}
+                \vspace{5mm}
+                \vspace{5mm}
+                \begin{equation}
+                    a = -980 \ cm/s^2
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta y = V_i \Delta t \ + \ \frac{1}{2} a \Delta t ^2
+                \end{equation}
+               \vspace{5mm}
+                \begin{equation}
+                    0 = \ \frac{1}{2}(a) \Delta t_y ^2 + 0 \ \Delta t_y \  - \Delta y
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    0 = \ (-490.5 \ cm/s^2) \Delta t_y ^2 + 0\Delta t_y \  - (76.5cm)
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta t_y = \frac{-(0)-\sqrt{(0)^2 - 4(-490.5)(76.5)}}{2(-490.5)}
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta t_y = 0.395123333884 \ s
+                \end{equation}
+                \vspace{5mm}
+            \subsection{Calculer la distance parcourue par la bille a l'aide du temps de chute}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta x = \Delta t_y \times V_{fx}
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta x = 0.395123333884 \ s \times ( 120 \ cm/s \ \ \grave{a} \ \ 0.05 \%)
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta x = 47.4148000661 \ cm \ \ \grave{a} \ \ 0.05 \%
+                \end{equation}
+        \section{Traitement des données avec Tracker}
+            \vspace{4mm}
+            \subsection{Graphique de la vitesse en fonction du temps}
+                \includegraphics[scale=0.75]{graph.png}
+                \vspace{8mm}
+            \subsection{Calcul de la vitesse finale a l'aide d'une fonction affine}
+                \setcounter{equation}{0}
+                \vspace{5mm}
+                \begin{equation}
+                    y = ax + b
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_f = a \Delta t
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_f = (1.003) \times (1 \ \grave{a} \ 10 \%)
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_f = 1.003 \ m/s \ \ \grave{a} \ 10 \%
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    v_f = 100.3 \ cm/s \ \ \grave{a} \ \ 10 \%
+                \end{equation}
+            \subsection{Calculer le temps de chute}
+                \setcounter{equation}{0}
+                \vspace{5mm}
+                \vspace{5mm}
+                \begin{equation}
+                    a = -980 \ cm/s^2
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta y = V_i \Delta t \ + \ \frac{1}{2} a \Delta t ^2
+                \end{equation}
+               \vspace{5mm}
+                \begin{equation}
+                    0 = \ \frac{1}{2}(a) \Delta t_y ^2 + 0 \ \Delta t_y \  - \Delta y
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    0 = \ (-490.5 \ cm/s^2) \Delta t_y ^2 + 0\Delta t_y \  - (76.5cm)
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta t_y = \frac{-(0)-\sqrt{(0)^2 - 4(-490.5)(76.5)}}{2(-490.5)}
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta t_y = 0.395123333884 \ s
+                \end{equation}
+                \vspace{5mm}
+            \subsection{Calculer la distance parcourue par la bille a l'aide du temps de chute}
+                 \setcounter{equation}{0}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta x = \Delta t_y \times V_{fx}
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta x = 0.395123333884 \ s \times ( 100.3 \ cm/s \ \grave{a} \ 10 \%)
+                \end{equation}
+                \vspace{5mm}
+                \begin{equation}
+                    \Delta x = 39.6308703886 \ cm \ \ \grave{a} \ \ 10 \%
+                \end{equation}
+                \newpage
+        \section{Choix du point de chute}
+            \vspace{10mm}
+            \subsection{Tableau de nos résultats}
+                 \begin{table}[H]
+                \begin{tabular}{lllll}
+                \textbf{Methode}     & \textbf{Distance de chute (cm)} & \textbf{Incertitude} &  &  \\
+                Chronometre & 47.4148000661             & 10.05 \%    &  &  \\
+                Video       & 47.4148000661             & 0.05 \%        &  &  \\
+                Tracker     & 39.6308703886             & 10 \%       &  &
+                \end{tabular}
+                \end{table}
+                \vspace{10mm}
+            \subsection{Choix}
+                \hspace{11mm} À notre avis. choisir la méthode Video serait le choix le plus précis car il comprend moins d'incertitude que les autres méthodes. La méthode du chronomètre comprend $10.05 \%$ d'incertitude et la méthode Tracker est visiblement imprécise comme notre Graphique le démontre à \textbf{7.1}. La mesure de tracker dépend de notre précision à marquer chaqune des images au bon endroit alors que la mesure du chronomètre, meme si il s'agit d'une moyene, n'est pas précis puisque le temps de réaction humain ajoute un $10 \%$ d'incertitude.
+                \vspace{10mm}
+
+        \section{Resultat final}
+                \subsection{Calculer la distance en $\Delta x$ en prenant en compte l'incertitude}
+                    \setcounter{equation}{0}
+                    \vspace{4mm}
+                    \begin{equation}
+                       \Delta x = 47.4148 \ cm
+                    \end{equation}
+                    \vspace{2mm}
+                    \begin{equation}
+                        d = \Delta x \times 0.05 = 2.37074 \ cm
+                    \end{equation}
+                    \vspace{2mm}
+                    \begin{equation}
+                        \Delta x_{min} = \Delta x - d = 45.04406 \ cm
+                    \end{equation}
+                    \vspace{1mm}
+                    \begin{equation}
+                        \Delta x_{max} = \Delta x + d = 49.78554 \ cm
+                    \end{equation}
+                    \vspace{2mm}
+                \subsection{Resultat}
+                    \hspace{11mm} La balle tombera a une distance de la table entre 45.04 cm et 49.79 cm.
+
+
+\end{document}
