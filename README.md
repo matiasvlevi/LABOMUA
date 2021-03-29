@@ -1,2 +1,5 @@
-# LABORATOIRE 
-### Distance de Chute d'une projectile.
+<object data="http://github.com/matiasvlevi/LABOMUA/paper.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="http://github.com/matiasvlevi/LABOMUA/paper.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="http://github.com/matiasvlevi/LABOMUA/paper.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
